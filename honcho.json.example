@@ -1,0 +1,16 @@
+{
+  "_comment": "Contoh template config Honcho profile-local untuk self-host. Salin ke $HERMES_HOME/honcho.json (atau ~/.honcho/config.json untuk global). Wizard 'hermes honcho setup' / 'hermes memory setup' mengisi ini otomatis — gunakan template ini sebagai referensi, BUKAN menggantikan wizard.",
+  "contextTokens": 1200,
+  "contextCadence": 1,
+  "dialecticCadence": 2,
+  "dialecticDepth": 1,
+  "dialecticReasoningLevel": "medium",
+  "reasoningHeuristic": true,
+  "reasoningLevelCap": "high",
+  "hosts": {
+    "http://localhost:8000": {
+      "_comment": "Base URL server Honcho lokal Anda. apiKey diisi wizard dengan JWT local (signed pakai AUTH_JWT_SECRET). Kosongkan bila server berjalan dengan AUTH_USE_AUTH=false.",
+      "apiKey": ""
+    }
+  }
+}

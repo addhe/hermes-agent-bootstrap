@@ -1,0 +1,19 @@
+# Environment / secrets — jangan pernah commit
+*.env
+.env
+env
+**/config.yaml
+config.yaml
+honcho.json
+# tapi simpan contoh/template
+!*.env.example
+!honcho.json.example
+!*config.yaml.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
